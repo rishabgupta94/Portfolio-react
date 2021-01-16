@@ -1,0 +1,36 @@
+.home .container {
+  position: absolute;
+  margin: auto;
+  top: 50%;
+  left: 60%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+img {
+  border-radius: 50%;
+  width: 50%;
+}
+
+.name {
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: #3b3b3b;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sub-heading {
+  font-weight: normal;
+}
+
+.know-me-text {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: white;
+  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+}
+
+.home .btn {
+  margin-top: 40px;
+  padding: 10px 50px;
+  border-radius: 30px;
+}

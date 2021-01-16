@@ -3,6 +3,7 @@ import { Col, Nav, Row, Container, Alert } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import "./NavBar.css";
 
 class NavBar extends Component {
   state = {
@@ -28,10 +29,14 @@ class NavBar extends Component {
             <Col>
               <Nav className="justify-content-center" activeKey="/home">
                 <Nav.Item>
-                  <Nav.Link href="/home">HOME</Nav.Link>
+                  <Nav.Link href="/home" eventKey="link-0">
+                    HOME
+                  </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="link-1">ABOUT ME</Nav.Link>
+                  <Nav.Link href="/aboutme" eventKey="link-1">
+                    ABOUT ME
+                  </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
                   <Nav.Link eventKey="link-2">PROJECTS</Nav.Link>
@@ -48,7 +53,7 @@ class NavBar extends Component {
                     <FontAwesomeIcon
                       icon={faEnvelope}
                       size="2x"
-                      color="#4f4f4f"
+                      color="#a8a8a8"
                     />
                   </div>
                 </Col>
@@ -57,7 +62,7 @@ class NavBar extends Component {
                     <FontAwesomeIcon
                       icon={faGithub}
                       size="2x"
-                      color="#4f4f4f"
+                      color="#a8a8a8"
                     />
                   </a>
                 </Col>
@@ -69,7 +74,7 @@ class NavBar extends Component {
                     <FontAwesomeIcon
                       icon={faLinkedin}
                       size="2x"
-                      color="#4f4f4f"
+                      color="#a8a8a8"
                     />
                   </a>
                 </Col>
