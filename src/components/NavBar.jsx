@@ -35,7 +35,7 @@ class NavBar extends Component {
                 </Nav.Item>
                 <Nav.Item>
                   <Nav.Link href="/aboutme" eventKey="link-1">
-                    ABOUT US
+                    CHANGE
                   </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
