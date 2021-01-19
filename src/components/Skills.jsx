@@ -7,7 +7,7 @@ class Skills extends Component {
   render() {
     return (
       <div className="skills">
-        <h1 className="text-center">Skills</h1>
+        <h1 className="text-center mb-5">Skills</h1>
         <Container>
           <Table responsive bordered>
             <tbody>

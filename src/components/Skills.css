@@ -1,7 +1,8 @@
 .badge {
   font-size: 1rem;
-  padding: 10px 20px;
+  padding: 10px;
   border-radius: 10px;
+  display: block;
 }
 
 .badge-info {
@@ -13,4 +14,11 @@ tr,
 th,
 td {
   border: none !important;
+}
+
+th {
+  font-size: x-large;
+  font-weight: 500;
+  text-align: right;
+  padding-right: 70px !important;
 }
