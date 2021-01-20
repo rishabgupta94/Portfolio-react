@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Row, Col, Container, Button } from "react-bootstrap";
+import Experience from "./Experience";
 import "./Home.css";
 import Skills from "./Skills";
 
@@ -19,11 +20,15 @@ class Home extends Component {
               </Button>
             </Col>
             <Col>
-              <img src={`${process.env.PUBLIC_URL}/photo.jpg`} />
+              <img
+                className="my-photo"
+                src={`${process.env.PUBLIC_URL}/photo.jpg`}
+              />
             </Col>
           </Row>
         </Container>
         <Skills />
+        <Experience />
       </div>
     );
   }

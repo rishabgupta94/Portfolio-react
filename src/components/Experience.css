@@ -1,0 +1,51 @@
+.experience {
+  margin: 0px 250px;
+}
+
+.card {
+  border: none;
+  background-color: transparent;
+  border-radius: 10px;
+  box-shadow: 0px 0px 4px 0px rgba(199, 199, 199, 1);
+}
+
+.card-header {
+  border-style: none;
+  border-radius: 10px 10px 0px 0px !important;
+  background-color: rgb(235, 235, 235);
+}
+
+.card-body {
+  border-style: none;
+  border-radius: 0px 0px 10px 10px !important;
+}
+
+.company {
+  font-size: x-large;
+  font-weight: 700;
+  color: #54575a;
+}
+
+.position {
+  font-size: medium;
+  font-weight: 500;
+  color: #54575a;
+}
+
+.other {
+  font-size: smaller;
+  color: #54575a;
+}
+
+.perennia {
+  background-color: #ffeac5;
+}
+
+.st-mary {
+  background-color: #e4acc6;
+  /* color: white; */
+}
+
+.optymyze {
+  background-color: #afc8db;
+}

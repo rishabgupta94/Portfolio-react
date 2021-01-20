@@ -6,7 +6,7 @@
   transform: translateX(-50%) translateY(-50%);
 } */
 
-img {
+.home .my-photo {
   border-radius: 50%;
   width: 50%;
 }
