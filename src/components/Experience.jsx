@@ -9,7 +9,7 @@ class Experience extends Component {
       <div className="experience">
         <Container>
           <h1 className="text-center mb-5 mt-5">EXPERIENCE</h1>
-          <Card className="m-5">
+          <Card className="mb-5 mt-5">
             <Card.Header>
               <text className="company">Perennia Food & Agriculture</text>
               <br />
@@ -46,7 +46,7 @@ class Experience extends Component {
               </Card.Text>
             </Card.Body>
           </Card>
-          <Card className="m-5">
+          <Card className="mb-5 mt-5">
             <Card.Header>
               <text className="company">St. Mary's University</text>
               <br />
@@ -78,7 +78,7 @@ class Experience extends Component {
               </Card.Text>
             </Card.Body>
           </Card>
-          <Card className="m-5">
+          <Card className="mb-5 mt-5">
             <Card.Header>
               <text className="company">Optymyze</text>
               <br />
