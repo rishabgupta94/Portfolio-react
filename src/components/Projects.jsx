@@ -1,81 +1,21 @@
 import React, { Component } from "react";
-import { Card, Container, Button, Row, Col, Modal } from "react-bootstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
+import { Container, Row, Col } from "react-bootstrap";
 import "./Projects.css";
+import VehicleRecommendation from "./projectmodals/VehicleRecommendation";
+import FollowRivers from "./projectmodals/FollowRivers";
 
 class Projects extends Component {
-  state = {
-    modalShow: false,
-  };
-
-  handleModalShow = () => {
-    this.setState({ modalShow: true });
-  };
-
-  handleModalClose = () => {
-    this.setState({ modalShow: false });
-  };
+  state = {};
 
   render() {
     return (
       <div className="projects mb-5">
         <h1 className="text-center mb-5">PROJECTS</h1>
         <Container>
-          <Row>
-            <Col sm={12} lg={4} md={6} className="container-photo">
+          <Row className="justify-content-center">
+            <Col sm={12} lg={3} md={6} className="container-photo m-2">
               <div className="button text-center">
-                <Button variant="warning" onClick={this.handleModalShow}>
-                  Learn More
-                </Button>
-                <Modal
-                  show={this.state.modalShow}
-                  onHide={this.handleModalClose}
-                  centered
-                >
-                  <Modal.Header className="text-center p-0">
-                    <Modal.Title>
-                      <img
-                        src={`${process.env.PUBLIC_URL}/vehicle.jpg`}
-                        style={{ width: "100%" }}
-                      />
-                      Vehicle Recommendation
-                    </Modal.Title>
-                  </Modal.Header>
-                  <Modal.Body>
-                    <p>
-                      The purpose of this project was to give a recommendation
-                      to a customer, who intends to buy a car and has expressed
-                      a certain criteria that are important in her decision.
-                      Analysis and feature engineering of the data was performed
-                      to extract the information from the variables with an aim
-                      to provide a reasonable recommendation.
-                      <br />
-                      <br />
-                      Tableau was used as a choice of visualization tool.
-                    </p>
-                    <Button
-                      className="mr-3"
-                      variant="outline-danger"
-                      onClick={() =>
-                        window.open(
-                          "https://public.tableau.com/profile/rishab.gupta#!/vizhome/RecommendationforVehiclePurchase/SCover",
-                          "_blank"
-                        )
-                      }
-                    >
-                      Tableau{"  "}
-                      <FontAwesomeIcon icon={faExternalLinkAlt} size="sm" />
-                    </Button>
-                    <Button variant="outline-danger">
-                      Report{"  "}
-                      <FontAwesomeIcon icon={faExternalLinkAlt} size="sm" />
-                    </Button>
-                  </Modal.Body>
-                  <Modal.Footer>
-                    <Button onClick={this.handleModalClose}>Close</Button>
-                  </Modal.Footer>
-                </Modal>
+                <VehicleRecommendation />
               </div>
               <article className="text-left">
                 <h2>
@@ -86,8 +26,33 @@ class Projects extends Component {
               </article>
               <img src={`${process.env.PUBLIC_URL}/vehicle.jpg`} />
             </Col>
-            <Col></Col>
-            <Col></Col>
+            <Col sm={12} lg={3} md={6} className="container-photo m-2">
+              <div className="button text-center">
+                <FollowRivers />
+              </div>
+              <article className="text-left">
+                <h2>
+                  Follow <br />
+                  River
+                </h2>
+                <h4>Tableau | Data Analysis</h4>
+              </article>
+              <img src={`${process.env.PUBLIC_URL}/followriver.jpg`} />
+            </Col>
+            <Col sm={12} lg={3} md={6} className="container-photo m-2">
+              {" "}
+              <div className="button text-center">
+                <VehicleRecommendation />
+              </div>
+              <article className="text-left">
+                <h2>
+                  Follow <br />
+                  River
+                </h2>
+                <h4>Tableau | Data Analysis</h4>
+              </article>
+              <img src={`${process.env.PUBLIC_URL}/followriver.jpg`} />
+            </Col>
           </Row>
         </Container>
       </div>

@@ -77,11 +77,11 @@
 }
 
 .container-photo:hover article {
-  transform: translate(2px, -69px);
-  -webkit-transform: translate(2px, -69px);
-  -moz-transform: translate(2px, -69px);
-  -o-transform: translate(2px, -69px);
-  -ms-transform: translate(2px, -69px);
+  transform: translate(2px, -45px);
+  -webkit-transform: translate(2px, -45px);
+  -moz-transform: translate(2px, -45px);
+  -o-transform: translate(2px, -45px);
+  -ms-transform: translate(2px, -45px);
 }
 
 .container-photo:hover .button {
