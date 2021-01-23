@@ -26,4 +26,4 @@ phases:
 artifacts:
   files: -"**/*"
   discard-paths: no
-  base-directory: build
+  base-directory: codepipeline-ca-central-1-936029505820/portfolio-react-rish/BuildArtif
