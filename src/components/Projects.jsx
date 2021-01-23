@@ -47,7 +47,7 @@ class Projects extends Component {
               <article className="text-left">
                 <h2>
                   Follow <br />
-                  River
+                  River Test
                 </h2>
                 <h4>Tableau | Data Analysis</h4>
               </article>
