@@ -22,8 +22,9 @@ phases:
       #builds
       - echo Building build-"$REACT_APP_BUILD_NAME"...
       - npm run build
+      - echo pwd
 
 artifacts:
   filtes: -"**/*"
   discard-paths: no
-  base-directory: SourceArti/
+  base-directory: build
