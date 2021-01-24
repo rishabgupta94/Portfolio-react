@@ -16,6 +16,7 @@ class Home extends Component {
               <text className="name">RISHAB GUPTA</text>
               <h6 className="sub-heading">AWS Certified Solutions Architect</h6>
               <h6 className="sub-heading">Front End Web Developer</h6>
+              <h6 className="sub-heading">Testing AWS</h6>
               <Button className="get-to-know-me" variant="warning">
                 <span className="know-me-text">Get to know me</span>
               </Button>
