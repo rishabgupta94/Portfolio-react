@@ -8,8 +8,7 @@ function App() {
     <div>
       <NavBar />
       <Switch>
-        <Route path="/home" render={(props) => <Home {...props} /> } />
-      <Redirect from="/" to="/home" />
+        <Route path="/" render={(props) => <Home {...props} />} />
       </Switch>
     </div>
   );
