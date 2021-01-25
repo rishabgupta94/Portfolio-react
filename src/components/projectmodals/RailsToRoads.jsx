@@ -3,7 +3,7 @@ import { Button, Modal } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 
-class FollowRivers extends Component {
+class RailsToRoads extends Component {
   state = {
     modalShow: false,
   };
@@ -29,41 +29,45 @@ class FollowRivers extends Component {
           <Modal.Header className="text-center p-0">
             <Modal.Title>
               <img
-                src={`${process.env.PUBLIC_URL}/followriver.jpg`}
+                src={`${process.env.PUBLIC_URL}/rails.jpg`}
                 style={{ width: "100%" }}
               />
-              Follow River
+              Rails to Roads
+              <h6>Secured 1st place</h6>
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <p>
+              Worked over the weekend with my team to come up with an innovative
+              idea to solve the transportation problem in Halifax. The event
+              gave me a chance to meet and network with senior leaders, students
+              and innovators from different disciplines and backgrounds.
+              <br />
+              <br />
               <ul>
                 <li>
-                  Developed an interactive dashboard to monitor and visualize
-                  the chemical pollution trends of NS rivers
+                  Build roads for Rapid Transit Bus System (RTBS) on the
+                  decommissioned railway tracks.
                 </li>
                 <li>
-                  Government can now publish annual reports used to influence
-                  regulations for industrial waste handling
+                  The RTBS is slow because it uses the same routes as the
+                  regular buses.
                 </li>
-                <li>
-                  Intended audience: Fishermen and Real Estate professionals
-                </li>
+                <li>The new track will only be used by RTBS.</li>
               </ul>
               <br />
-              Tableau was used as a choice of visualization tool.
             </p>
             <Button
               className="mr-3"
               variant="outline-danger"
               onClick={() =>
                 window.open(
-                  "https://public.tableau.com/profile/rishab.gupta#!/vizhome/FollowRivers-OpenData/Dashboard1",
+                  "https://drive.google.com/file/d/1hqZ4GshjiOsHt70t7pmCj3e-P70N5y5w/view?usp=sharing",
                   "_blank"
                 )
               }
             >
-              Tableau{"  "}
+              Photo{"  "}
               <FontAwesomeIcon icon={faExternalLinkAlt} size="sm" />
             </Button>
           </Modal.Body>
@@ -76,4 +80,4 @@ class FollowRivers extends Component {
   }
 }
 
-export default FollowRivers;
+export default RailsToRoads;

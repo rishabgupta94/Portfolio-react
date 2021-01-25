@@ -3,7 +3,7 @@ import { Button, Modal } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 
-class FollowRivers extends Component {
+class OpenData2020 extends Component {
   state = {
     modalShow: false,
   };
@@ -29,41 +29,47 @@ class FollowRivers extends Component {
           <Modal.Header className="text-center p-0">
             <Modal.Title>
               <img
-                src={`${process.env.PUBLIC_URL}/followriver.jpg`}
+                src={`${process.env.PUBLIC_URL}/recycling.jpg`}
                 style={{ width: "100%" }}
               />
-              Follow River
+              NS Open Data 2020
+              <h6>Secured 2nd place</h6>
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <p>
+              In these times, it is critical for our society to embrace all
+              possible means of environmental conservation. My team and I came
+              up with an idea to incentivize the recycling process in Halifax.
+              <br />
+              <br />
               <ul>
                 <li>
-                  Developed an interactive dashboard to monitor and visualize
-                  the chemical pollution trends of NS rivers
+                  User will order a ziptag from the application. Ziptag will
+                  have a unique barcode.
                 </li>
                 <li>
-                  Government can now publish annual reports used to influence
-                  regulations for industrial waste handling
+                  User will use the ziptag to tie his recycling bag before
+                  putting it on the curb
                 </li>
                 <li>
-                  Intended audience: Fishermen and Real Estate professionals
+                  The user will be rewarded via the application based on the
+                  weight of the recycling bag.
                 </li>
               </ul>
               <br />
-              Tableau was used as a choice of visualization tool.
             </p>
             <Button
               className="mr-3"
               variant="outline-danger"
               onClick={() =>
                 window.open(
-                  "https://public.tableau.com/profile/rishab.gupta#!/vizhome/FollowRivers-OpenData/Dashboard1",
+                  "https://drive.google.com/file/d/1tzI8brELa-lt9SEasrt-xG91Sx0IGPV8/view?usp=sharing",
                   "_blank"
                 )
               }
             >
-              Tableau{"  "}
+              Photo{"  "}
               <FontAwesomeIcon icon={faExternalLinkAlt} size="sm" />
             </Button>
           </Modal.Body>
@@ -76,4 +82,4 @@ class FollowRivers extends Component {
   }
 }
 
-export default FollowRivers;
+export default OpenData2020;

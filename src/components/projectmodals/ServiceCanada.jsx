@@ -3,7 +3,7 @@ import { Button, Modal } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 
-class FollowRivers extends Component {
+class ServiceCanada extends Component {
   state = {
     modalShow: false,
   };
@@ -29,41 +29,37 @@ class FollowRivers extends Component {
           <Modal.Header className="text-center p-0">
             <Modal.Title>
               <img
-                src={`${process.env.PUBLIC_URL}/followriver.jpg`}
+                src={`${process.env.PUBLIC_URL}/servicecanada.jpg`}
                 style={{ width: "100%" }}
               />
-              Follow River
+              Service Canada Hackathon
+              <h6>Secured 3rd place</h6>
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <p>
-              <ul>
-                <li>
-                  Developed an interactive dashboard to monitor and visualize
-                  the chemical pollution trends of NS rivers
-                </li>
-                <li>
-                  Government can now publish annual reports used to influence
-                  regulations for industrial waste handling
-                </li>
-                <li>
-                  Intended audience: Fishermen and Real Estate professionals
-                </li>
-              </ul>
+              The hackathon was organize by Service Canada. An open-ended
+              problem statement was given and the goal was to come up with a
+              feasible and effective solution from the government's point of
+              view while avoiding the usage of any third-party APIs owing to
+              security reasons.
               <br />
-              Tableau was used as a choice of visualization tool.
+              <br />
+              <span className="text-secondary fst-italic">
+                Cannot share details because teams signed a NDA
+              </span>
             </p>
             <Button
               className="mr-3"
               variant="outline-danger"
               onClick={() =>
                 window.open(
-                  "https://public.tableau.com/profile/rishab.gupta#!/vizhome/FollowRivers-OpenData/Dashboard1",
+                  "https://drive.google.com/file/d/1t9HYrVbGushaTrw_iMW7USzA9uTdw5cM/view?usp=sharing",
                   "_blank"
                 )
               }
             >
-              Tableau{"  "}
+              Photo{"  "}
               <FontAwesomeIcon icon={faExternalLinkAlt} size="sm" />
             </Button>
           </Modal.Body>
@@ -76,4 +72,4 @@ class FollowRivers extends Component {
   }
 }
 
-export default FollowRivers;
+export default ServiceCanada;
