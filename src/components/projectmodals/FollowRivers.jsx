@@ -36,6 +36,11 @@ class FollowRivers extends Component {
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>
+            <span style={{ fontWeight: "bold" }}>Technologies used:</span>
+            {"  "}
+            <span>Tableau</span>
+            <br />
+            <br />
             <p>
               <ul>
                 <li>

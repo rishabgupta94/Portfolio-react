@@ -8,6 +8,7 @@ import ServiceCanada from "./projectmodals/ServiceCanada";
 import RailsToRoads from "./projectmodals/RailsToRoads";
 import DataVisualizationUNB from "./projectmodals/DataVisualizationUNB";
 import HalifaxLibrary from "./projectmodals/HalifaxLibrary";
+import FarmCOP from "./projectmodals/FarmCOP";
 
 class Projects extends Component {
   state = {};
@@ -17,6 +18,19 @@ class Projects extends Component {
       <div className="projects mb-5">
         <h1 className="text-center mb-5">PROJECTS</h1>
         <Row className="justify-content-center">
+          <Col sm={12} lg={3} md={6} className="container-photo m-2">
+            <div className="button text-center">
+              <FarmCOP />
+            </div>
+            <article className="text-left">
+              <h2>
+                Farms' Cost of <br />
+                Production
+              </h2>
+              <h4>AWS | React | IoT</h4>
+            </article>
+            <img src={`${process.env.PUBLIC_URL}/farms.jpeg`} />
+          </Col>
           <Col sm={12} lg={3} md={6} className="container-photo m-2">
             <div className="button text-center">
               <VehicleRecommendation />
@@ -107,19 +121,6 @@ class Projects extends Component {
               <h4>SQL | Python | PHP</h4>
             </article>
             <img src={`${process.env.PUBLIC_URL}/halifaxlibrary.jpg`} />
-          </Col>
-          <Col sm={12} lg={3} md={6} className="container-photo m-2">
-            <div className="button text-center">
-              <HalifaxLibrary />
-            </div>
-            <article className="text-left">
-              <h2>
-                Farms' Cost of <br />
-                Production
-              </h2>
-              <h4>React | IoT</h4>
-            </article>
-            <img src={`${process.env.PUBLIC_URL}/farms.jpeg`} />
           </Col>
         </Row>
       </div>

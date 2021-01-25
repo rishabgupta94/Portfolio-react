@@ -37,6 +37,11 @@ class HalifaxLibrary extends Component {
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>
+            <span style={{ fontWeight: "bold" }}>Technologies used:</span>
+            {"  "}
+            <span>React, AWS, IoT</span>
+            <br />
+            <br />
             <p>
               The project was focused to improve the existing database design of
               the library. The library has the data about various magazine

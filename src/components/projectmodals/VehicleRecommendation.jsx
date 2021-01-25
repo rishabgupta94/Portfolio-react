@@ -36,6 +36,11 @@ class VehicleRecommendation extends Component {
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>
+            <span style={{ fontWeight: "bold" }}>Technologies used:</span>
+            {"  "}
+            <span>Tableau, MS Excel</span>
+            <br />
+            <br />
             <p>
               The purpose of this project was to give a recommendation to a
               customer, who intends to buy a car and has expressed a certain

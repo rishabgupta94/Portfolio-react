@@ -117,6 +117,9 @@ class Skills extends Component {
               <tr>
                 <th>Visualization</th>
                 <td>
+                  <Badge variant="info">AdobeXD</Badge>
+                </td>
+                <td>
                   <Badge variant="info">Tableau</Badge>
                 </td>
                 <td>
