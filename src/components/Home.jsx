@@ -28,9 +28,6 @@ class Home extends Component {
             </Col>
           </Row>
         </Container>
-        <Skills />
-        <Experience />
-        <Projects />
       </div>
     );
   }
