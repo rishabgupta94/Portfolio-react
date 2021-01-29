@@ -7,9 +7,11 @@ class Experience extends Component {
   render() {
     return (
       <div className="experience">
+        <div className="title-margin-top" />
+        <h1 className="text-center">EXPERIENCE</h1>
+        <div className="title-margin" />
         <Container>
-          <h1 className="text-center mb-5 mt-5">EXPERIENCE</h1>
-          <Card className="mb-5 mt-5">
+          <Card className="mb-5">
             <Card.Header>
               <text className="company">Perennia Food & Agriculture</text>
               <br />
@@ -78,7 +80,7 @@ class Experience extends Component {
               </Card.Text>
             </Card.Body>
           </Card>
-          <Card className="mb-5 mt-5">
+          <Card className="mt-5">
             <Card.Header>
               <text className="company">Optymyze</text>
               <br />
@@ -117,6 +119,7 @@ class Experience extends Component {
             </Card.Body>
           </Card>
         </Container>
+        <div className="page-spacer" />
       </div>
     );
   }

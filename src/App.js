@@ -30,7 +30,7 @@ const scrollTo = (ele) => {
 function App() {
   const [visibleSection, setVisibleSection] = useState();
 
-  const headerRef = useRef(null)
+  const headerRef = useRef(null);
   const homeRef = useRef(null);
   const aboutMeRef = useRef(null);
   const projectsRef = useRef(null);
@@ -45,16 +45,16 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const {height: headerHeight} = getDimensions(headerRef.current);
+      const { height: headerHeight } = getDimensions(headerRef.current);
       const scrollPosition = window.scrollY + headerHeight;
-      const selected = sectionRefs.find(({section, ref}) => {
+      const selected = sectionRefs.find(({ section, ref }) => {
         const ele = ref.current;
-        if(ele) {
-          const {offsetBottom, offsetTop} = getDimensions(ele);
+        if (ele) {
+          const { offsetBottom, offsetTop } = getDimensions(ele);
           return scrollPosition > offsetTop && scrollPosition < offsetBottom;
         }
       });
-      if(selected && selected.section !== visibleSection) {
+      if (selected && selected.section !== visibleSection) {
         setVisibleSection(selected.section);
       } else if (!selected && visibleSection) {
         setVisibleSection(undefined);
@@ -68,16 +68,15 @@ function App() {
     };
   }, [visibleSection]);
 
-
-
   return (
     <div className="app">
-      {/* <div className="top-spacer" /> */}
       <div className="content">
         <div className="sticky">
           <div className="header" ref={headerRef}>
             <div
-              className={`header_link ${visibleSection === "home" ? "selected" : ""}`}
+              className={`header_link ${
+                visibleSection === "home" ? "selected" : ""
+              }`}
               onClick={() => {
                 scrollTo(homeRef.current);
               }}
@@ -85,7 +84,9 @@ function App() {
               Home
             </div>
             <div
-              className={`header_link ${visibleSection === "about-me" ? "selected" : ""}`}
+              className={`header_link ${
+                visibleSection === "about-me" ? "selected" : ""
+              }`}
               onClick={() => {
                 scrollTo(aboutMeRef.current);
               }}
@@ -93,7 +94,9 @@ function App() {
               About Me
             </div>
             <div
-              className={`header_link ${visibleSection === "projects" ? "selected" : ""}`}
+              className={`header_link ${
+                visibleSection === "projects" ? "selected" : ""
+              }`}
               onClick={() => {
                 scrollTo(projectsRef.current);
               }}
@@ -101,25 +104,31 @@ function App() {
               Projects
             </div>
             <div
-              className={`header_link ${visibleSection === "contact" ? "selected" : ""}`}
+              className={`header_link ${
+                visibleSection === "contact" ? "selected" : ""
+              }`}
               onClick={() => {
                 scrollTo(contactRef.current);
               }}
             >
               Contact
             </div>
-            </div>
           </div>
-          <div className="section" id="home" ref={homeRef}>
-            <Home /></div>
-          <div className="section" id="about-me" ref={aboutMeRef}>
+        </div>
+        <div className="section" id="home" ref={homeRef}>
+          <div className="page-spacer" />
+          <Home />
+          <div className="page-spacer" />
+        </div>
+        <div className="section" id="about-me" ref={aboutMeRef}>
           <Skills />
-          <Experience /></div>
-          <div className="section" id="projects" ref={projectsRef}>
-            <Projects /></div>
-          <div className="section" id="contact" ref={contactRef} />
-        
-        <div className="bottom-spacer" />
+          <Experience />
+        </div>
+        <div className="section" id="projects" ref={projectsRef}>
+          <Projects />
+        </div>
+        <div className="section" id="contact" ref={contactRef} />
+
       </div>
       {/* <NavBar />
       <Switch>

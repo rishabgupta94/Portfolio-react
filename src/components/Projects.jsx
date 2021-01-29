@@ -16,7 +16,9 @@ class Projects extends Component {
   render() {
     return (
       <div className="projects mb-5">
-        <h1 className="text-center mb-5">PROJECTS</h1>
+        <div className="title-margin-top" />
+        <h1 className="text-center">PROJECTS</h1>
+        <div className="title-margin" />
         <Row className="justify-content-center">
           <Col sm={12} lg={3} md={6} className="container-photo m-2">
             <div className="button text-center">
@@ -123,6 +125,7 @@ class Projects extends Component {
             <img src={`${process.env.PUBLIC_URL}/halifaxlibrary.jpg`} />
           </Col>
         </Row>
+        <div className="page-spacer" />
       </div>
     );
   }

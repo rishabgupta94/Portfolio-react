@@ -10,7 +10,9 @@ class Skills extends Component {
   render() {
     return (
       <div className="skills">
-        {/* <h1 className="text-center mb-5">Skills</h1> */}
+        <div className="title-margin-top" />
+        <h1 className="text-center">SKILLS</h1>
+        <div className="title-margin" />
         <Container>
           <Row>
             <Col md={6} lg={3} className="text-center mb">
@@ -141,6 +143,7 @@ class Skills extends Component {
             </tbody>
           </Table>
         </Container>
+        <div className="page-spacer" />
       </div>
     );
   }

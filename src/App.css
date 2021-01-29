@@ -1,9 +1,13 @@
-.top-spacer {
-  height: 50vh;
+.page-spacer {
+  height: 25vh;
 }
 
-.bottom-spacer {
-  height: 110vh;
+.title-margin {
+  height: 20vh;
+}
+
+.title-margin-top {
+  height: 10vh;
 }
 
 .header {
@@ -36,7 +40,7 @@
 }
 
 #about-me {
-  background-color: #f4769e;
+  background-color: #ffe8d2;
 }
 
 #projects {
