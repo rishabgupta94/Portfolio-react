@@ -11,8 +11,8 @@
 }
 
 .header {
-  display: flex;
-  justify-content: center;
+  /* display: flex; */
+  /* justify-content: center; */
   background-color: rgb(46, 46, 46);
 }
 

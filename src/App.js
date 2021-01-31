@@ -1,12 +1,15 @@
 import { useEffect, useRef, useState } from "react";
-// import { div } from "react-bootstrap";
-import { Switch, Redirect, Route } from "react-router-dom";
 import "./App.css";
 import Experience from "./components/Experience";
 import Home from "./components/Home";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import NavBar from "./components/NavBar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import { Col, Row } from "react-bootstrap";
+import MobileSidebar from "./mobile/MobileSidebar";
 
 const getDimensions = (ele) => {
   const { height } = ele.getBoundingClientRect();
@@ -72,47 +75,94 @@ function App() {
     <div className="app">
       <div className="content">
         <div className="sticky">
+          
+        {/* <MobileSidebar /> */}
           <div className="header" ref={headerRef}>
-            <div
-              className={`header_link ${
-                visibleSection === "home" ? "selected" : ""
-              }`}
-              onClick={() => {
-                scrollTo(homeRef.current);
-              }}
-            >
-              Home
-            </div>
-            <div
-              className={`header_link ${
-                visibleSection === "about-me" ? "selected" : ""
-              }`}
-              onClick={() => {
-                scrollTo(aboutMeRef.current);
-              }}
-            >
-              About Me
-            </div>
-            <div
-              className={`header_link ${
-                visibleSection === "projects" ? "selected" : ""
-              }`}
-              onClick={() => {
-                scrollTo(projectsRef.current);
-              }}
-            >
-              Projects
-            </div>
-            <div
-              className={`header_link ${
-                visibleSection === "contact" ? "selected" : ""
-              }`}
-              onClick={() => {
-                scrollTo(contactRef.current);
-              }}
-            >
-              Contact
-            </div>
+            <Row className="justify-content-between">
+              <Col sm="auto">
+                <Row>
+                  <Col sm="auto">
+                    <div
+                      className={`header_link ${
+                        visibleSection === "home" ? "selected" : ""
+                      }`}
+                      onClick={() => {
+                        scrollTo(homeRef.current);
+                      }}
+                    >
+                      Home
+                    </div>
+                  </Col>
+                  <Col sm="auto">
+                    <div
+                      className={`header_link ${
+                        visibleSection === "about-me" ? "selected" : ""
+                      }`}
+                      onClick={() => {
+                        scrollTo(aboutMeRef.current);
+                      }}
+                    >
+                      About Me
+                    </div>
+                  </Col>
+                  <Col sm="auto">
+                    <div
+                      className={`header_link ${
+                        visibleSection === "projects" ? "selected" : ""
+                      }`}
+                      onClick={() => {
+                        scrollTo(projectsRef.current);
+                      }}
+                    >
+                      Projects
+                    </div>
+                  </Col>
+                  <Col sm="auto">
+                    <div
+                      className={`header_link ${
+                        visibleSection === "contact" ? "selected" : ""
+                      }`}
+                      onClick={() => {
+                        scrollTo(contactRef.current);
+                      }}
+                    >
+                      Contact
+                    </div>
+                  </Col>
+                </Row>
+              </Col>
+              <Col sm="auto">
+                <Row className="float-right h-100">
+                  <Col sm="auto" className="my-auto">
+                    <div>
+                      <FontAwesomeIcon
+                        icon={faLinkedin}
+                        color={"#999999"}
+                        size="2x"
+                      />
+                    </div>
+                  </Col>
+                  <Col sm="auto" className="my-auto">
+                    <div>
+                      <FontAwesomeIcon
+                        icon={faGithub}
+                        color={"#999999"}
+                        size="2x"
+                      />
+                    </div>
+                  </Col>
+                  <Col sm="auto" className="my-auto mr-3">
+                    <div>
+                      <FontAwesomeIcon
+                        icon={faEnvelope}
+                        color={"#999999"}
+                        size="2x"
+                      />
+                    </div>
+                  </Col>
+                </Row>
+              </Col>
+            </Row>
           </div>
         </div>
         <div className="section" id="home" ref={homeRef}>
@@ -128,7 +178,6 @@ function App() {
           <Projects />
         </div>
         <div className="section" id="contact" ref={contactRef} />
-
       </div>
       {/* <NavBar />
       <Switch>
