@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./Projects.css";
-import VehicleRecommendation from "./projectmodals/VehicleRecommendation";
-import FollowRivers from "./projectmodals/FollowRivers";
-import OpenData2020 from "./projectmodals/OpenData2020";
-import ServiceCanada from "./projectmodals/ServiceCanada";
-import RailsToRoads from "./projectmodals/RailsToRoads";
-import DataVisualizationUNB from "./projectmodals/DataVisualizationUNB";
-import HalifaxLibrary from "./projectmodals/HalifaxLibrary";
-import FarmCOP from "./projectmodals/FarmCOP";
+import VehicleRecommendation from "../projectmodals/VehicleRecommendation";
+import FollowRivers from "../projectmodals/FollowRivers";
+import OpenData2020 from "../projectmodals/OpenData2020";
+import ServiceCanada from "../projectmodals/ServiceCanada";
+import RailsToRoads from "../projectmodals/RailsToRoads";
+import DataVisualizationUNB from "../projectmodals/DataVisualizationUNB";
+import HalifaxLibrary from "../projectmodals/HalifaxLibrary";
+import FarmCOP from "../projectmodals/FarmCOP";
 
 class Projects extends Component {
   state = {};

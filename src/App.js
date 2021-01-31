@@ -1,15 +1,16 @@
 import { useEffect, useRef, useState } from "react";
 import "./App.css";
-import Experience from "./components/Experience";
-import Home from "./components/Home";
+import Experience from "./components/sections/Experience";
+import Home from "./components/sections/Home";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import NavBar from "./components/NavBar";
-import Projects from "./components/Projects";
-import Skills from "./components/Skills";
+// import NavBar from "./components/sections/NavBar";
+import Projects from "./components/sections/Projects";
+import Skills from "./components/sections/Skills";
 import { Col, Row } from "react-bootstrap";
 import MobileSidebar from "./mobile/MobileSidebar";
+import Hamburger from "./mobile/Hamburger";
 
 const getDimensions = (ele) => {
   const { height } = ele.getBoundingClientRect();
@@ -75,8 +76,8 @@ function App() {
     <div className="app">
       <div className="content">
         <div className="sticky">
-          
-        {/* <MobileSidebar /> */}
+        <Hamburger />
+        <MobileSidebar />
           <div className="header" ref={headerRef}>
             <Row className="justify-content-between">
               <Col sm="auto">

@@ -58,3 +58,19 @@
   right: 0;
   z-index: 10;
 }
+
+/*MOBILE HEADER*/
+
+@media screen and (max-width: 5000px) {
+  .hamburger,
+  .mobile-sidebar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .hamburger,
+  .mobile-sidebar {
+    display: block;
+  }
+}
