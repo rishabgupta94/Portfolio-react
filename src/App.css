@@ -1,3 +1,7 @@
+.content {
+  overflow: hidden;
+}
+
 .page-spacer {
   height: 25vh;
 }
@@ -11,8 +15,6 @@
 }
 
 .header {
-  /* display: flex; */
-  /* justify-content: center; */
   background-color: rgb(46, 46, 46);
 }
 
@@ -52,7 +54,7 @@
 }
 
 .sticky {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -61,16 +63,34 @@
 
 /*MOBILE HEADER*/
 
+.mobile-header {
+  background-color: rgb(46, 46, 46);
+}
+
+.hamburger {
+  color: #dadada;
+  position: relative;
+  z-index: 20;
+}
+
+.hamburger:hover {
+  color: #666666;
+}
+
 @media screen and (max-width: 5000px) {
-  .hamburger,
+  .mobile-header,
   .mobile-sidebar {
     display: none;
   }
 }
 
 @media screen and (max-width: 700px) {
-  .hamburger,
+  .mobile-header,
   .mobile-sidebar {
     display: block;
+  }
+
+  .header {
+    display: none;
   }
 }
