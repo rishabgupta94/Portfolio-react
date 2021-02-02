@@ -11,7 +11,7 @@
 }
 
 .card-header:hover {
-  background-color: rgb(216, 216, 216);
+  background-color: rgb(233, 233, 233);
   box-shadow: 0px 0px 10px 0px rgb(190, 190, 190);
 }
 
@@ -29,7 +29,7 @@ button:focus {
 .card-header {
   border-style: none;
   border-radius: 10px 10px 0px 0px !important;
-  background-color: rgb(231, 231, 231);
+  background-color: rgb(255, 255, 255);
 }
 
 .card-body {
@@ -55,18 +55,14 @@ button:focus {
 }
 
 .perennia {
-  background-color: #ffeac5;
+  background-color: #ffeed2;
 }
 
 .st-mary {
-  background-color: #e4acc6;
+  background-color: #ffd3ea;
   /* color: white; */
 }
 
 .optymyze {
-  background-color: #afc8db;
+  background-color: #d7ecff;
 }
-
-/* .experience {
-  background-color: rgb(227, 255, 233);
-} */

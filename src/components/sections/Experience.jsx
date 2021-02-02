@@ -114,7 +114,7 @@ class Experience extends Component {
                     <ul>
                       <li>
                         Being the feature owner of "Workflows"; I ensured that a
-                        thorough testing is done with minimum ⠀of 95% confidence
+                        thorough testing is done with minimum of 95% confidence
                         coverage and bug rate less than 1%
                       </li>
                       <li>

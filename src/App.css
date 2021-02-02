@@ -7,7 +7,7 @@
 }
 
 .title-margin {
-  height: 7vh;
+  height: 10vh;
 }
 
 .title-margin-top {
@@ -33,25 +33,29 @@
   color: #ffffff;
 }
 
-/* .section {
-  height: 40vh;
-} */
+.copy-message {
+  cursor: pointer;
+}
 
-/* #home {
+#home {
   background-color: #f8f7f6;
 }
 
 #about-me {
-  background-color: #ffe8d2;
+  background-color: #ffffff;
+}
+
+.experience {
+  background-color: #f8f7f6;
 }
 
 #projects {
-  background-color: #8face0;
+  background-color: #ffffff;
 }
 
 #contact {
   background-color: #c8e08f;
-} */
+}
 
 .sticky {
   position: fixed;

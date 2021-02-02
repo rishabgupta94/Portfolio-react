@@ -2,10 +2,11 @@ import { useEffect, useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { Col, Row } from "react-bootstrap";
+import { Alert, Col, Row } from "react-bootstrap";
 import MobileSidebar from "../mobile/MobileSidebar";
 import MobileHeader from "../mobile/MobileHeader";
 import Content from "./Content";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 
 const getDimensions = (ele) => {
   const { height } = ele.getBoundingClientRect();
@@ -22,6 +23,7 @@ const getDimensions = (ele) => {
 function Dashboard(params) {
   const [menuVisible, hanldeMenuVisible] = useState(false);
   const [visibleSection, setVisibleSection] = useState();
+  const [copyMessage, onCopy] = useState();
 
   const headerRef = useRef(null);
   const homeRef = useRef(null);
@@ -43,6 +45,10 @@ function Dashboard(params) {
     { section: "projects", ref: projectsRef },
     { section: "contact", ref: contactRef },
   ];
+
+  useEffect(() => {
+    setTimeout(() => onCopy(""), 3000);
+  }, [copyMessage]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -145,35 +151,52 @@ function Dashboard(params) {
               <Row className="float-right h-100">
                 <Col sm="auto" className="my-auto">
                   <div>
-                    <FontAwesomeIcon
-                      icon={faLinkedin}
-                      color={"#999999"}
-                      size="2x"
-                    />
+                    <a
+                      target="_blank"
+                      href="https://www.linkedin.com/in/rishabgupta98/"
+                    >
+                      <FontAwesomeIcon
+                        icon={faLinkedin}
+                        color={"#999999"}
+                        size="2x"
+                      />
+                    </a>
                   </div>
                 </Col>
                 <Col sm="auto" className="my-auto">
-                  <div>
+                  <a target="_blank" href="https://github.com/rishabgupta94">
                     <FontAwesomeIcon
                       icon={faGithub}
                       color={"#999999"}
                       size="2x"
                     />
-                  </div>
+                  </a>
                 </Col>
                 <Col sm="auto" className="my-auto mr-3">
-                  <div>
-                    <FontAwesomeIcon
-                      icon={faEnvelope}
-                      color={"#999999"}
-                      size="2x"
-                    />
+                  <div className="copy-message">
+                    <CopyToClipboard
+                      onCopy={() =>
+                        onCopy("Email address has been copied to the clipboard")
+                      }
+                      text={"rishabgupta98@gmail.com"}
+                    >
+                      <FontAwesomeIcon
+                        icon={faEnvelope}
+                        color={"#999999"}
+                        size="2x"
+                      />
+                    </CopyToClipboard>
                   </div>
                 </Col>
               </Row>
             </Col>
           </Row>
         </div>
+        {copyMessage && (
+          <Alert variant="secondary" className="text-center">
+            <h5>{copyMessage}</h5>
+          </Alert>
+        )}
       </div>
       <Content
         homeRef={homeRef}
