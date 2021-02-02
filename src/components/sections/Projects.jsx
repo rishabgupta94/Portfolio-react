@@ -17,7 +17,7 @@ class Projects extends Component {
     return (
       <div className="projects mb-5">
         <div className="title-margin-top" />
-        <h1 className="text-center">PROJECTS</h1>
+        <h1 className="text-center title">PROJECTS</h1>
         <div className="title-margin" />
         <Row className="justify-content-center">
           <Col sm={12} lg={3} md={6} className="container-photo m-2">

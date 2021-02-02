@@ -1,0 +1,10 @@
+.title {
+  font-size: 4rem;
+  color: rgb(71, 71, 71);
+}
+
+@media screen and (max-width: 700px) {
+  .title {
+    font-size: 3rem;
+  }
+}

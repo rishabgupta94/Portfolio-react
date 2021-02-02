@@ -8,7 +8,7 @@ class Experience extends Component {
     return (
       <div className="experience">
         <div className="title-margin-top" />
-        <h1 className="text-center">EXPERIENCE</h1>
+        <h1 className="text-center title">EXPERIENCE</h1>
         <div className="title-margin" />
         <Container>
           <Accordion>

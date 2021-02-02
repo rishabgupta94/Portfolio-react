@@ -4,27 +4,19 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { Col, Row } from "react-bootstrap";
 import MobileSidebar from "../mobile/MobileSidebar";
-import Hamburger from "../mobile/MobileHeader";
-import Comps from "./Content";
+import MobileHeader from "../mobile/MobileHeader";
 import Content from "./Content";
 
 const getDimensions = (ele) => {
   const { height } = ele.getBoundingClientRect();
   const offsetTop = ele.offsetTop;
-  const offsetBottom = offsetTop + height;
+  const offsetBottom = offsetTop + height + 500;
 
   return {
     height,
     offsetTop,
     offsetBottom,
   };
-};
-
-const scrollTo = (ele) => {
-  ele.scrollIntoView({
-    behavior: "smooth",
-    block: "start",
-  });
 };
 
 function Dashboard(params) {
@@ -37,6 +29,14 @@ function Dashboard(params) {
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
 
+  const scrollTo = (ele) => {
+    ele.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+    hanldeMenuVisible(false);
+  };
+
   const sectionRefs = [
     { section: "home", ref: homeRef },
     { section: "about-me", ref: aboutMeRef },
@@ -47,7 +47,8 @@ function Dashboard(params) {
   useEffect(() => {
     const handleScroll = () => {
       const { height: headerHeight } = getDimensions(headerRef.current);
-      const scrollPosition = window.scrollY + headerHeight;
+      const scrollPosition = window.scrollY + headerHeight + 520;
+      console.log(scrollPosition);
       const selected = sectionRefs.find(({ section, ref }) => {
         const ele = ref.current;
         if (ele) {
@@ -69,11 +70,23 @@ function Dashboard(params) {
     };
   }, [visibleSection]);
 
+  const mobileProps = {
+    homeRef: homeRef.current,
+    aboutMeRef: aboutMeRef.current,
+    projectsRef: projectsRef.current,
+    contactRef: contactRef.current,
+  };
+
   return (
     <div className="content">
       <div className="sticky">
-        <Hamburger handleMenuClick={() => hanldeMenuVisible(!menuVisible)} />
-        <MobileSidebar menuVisible={menuVisible} />
+        <MobileHeader handleMenuClick={() => hanldeMenuVisible(!menuVisible)} />
+        <MobileSidebar
+          menuVisible={menuVisible}
+          visibleSection={visibleSection}
+          scrollTo={scrollTo}
+          {...mobileProps}
+        />
         <div className="header" ref={headerRef}>
           <Row className="justify-content-between">
             <Col sm="auto">

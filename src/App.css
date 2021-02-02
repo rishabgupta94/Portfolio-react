@@ -7,7 +7,7 @@
 }
 
 .title-margin {
-  height: 20vh;
+  height: 7vh;
 }
 
 .title-margin-top {
@@ -37,7 +37,7 @@
   height: 40vh;
 } */
 
-#home {
+/* #home {
   background-color: #f8f7f6;
 }
 
@@ -51,7 +51,7 @@
 
 #contact {
   background-color: #c8e08f;
-}
+} */
 
 .sticky {
   position: fixed;

@@ -3,6 +3,7 @@ import Experience from "./sections/Experience";
 import Home from "./sections/Home";
 import Projects from "./sections/Projects";
 import Skills from "./sections/Skills";
+import "./Content.css";
 
 const Content = (props) => {
   return (

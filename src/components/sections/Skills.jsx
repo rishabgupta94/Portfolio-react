@@ -11,7 +11,7 @@ class Skills extends Component {
     return (
       <div className="skills">
         <div className="title-margin-top" />
-        <h1 className="text-center">SKILLS</h1>
+        <h1 className="text-center title">SKILLS</h1>
         <div className="title-margin" />
         <Container>
           <Row>
