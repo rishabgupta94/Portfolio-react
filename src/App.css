@@ -38,7 +38,7 @@
 }
 
 #home {
-  background-color: #f8f7f6;
+  background-color: #fff6ee;
 }
 
 #about-me {
@@ -46,7 +46,7 @@
 }
 
 .experience {
-  background-color: #f8f7f6;
+  background-color: #fff6ee;
 }
 
 #projects {
@@ -54,7 +54,11 @@
 }
 
 #contact {
-  background-color: #c8e08f;
+  background-color: #d24d57;
+}
+
+.developed-by {
+  background-color: rgb(58, 58, 58);
 }
 
 .sticky {

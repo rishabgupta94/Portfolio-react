@@ -4,6 +4,8 @@ import Home from "./sections/Home";
 import Projects from "./sections/Projects";
 import Skills from "./sections/Skills";
 import "./Content.css";
+import Contact from "./sections/Contact";
+import DevelopedBy from "./sections/DevelopedBy";
 
 const Content = (props) => {
   return (
@@ -20,7 +22,10 @@ const Content = (props) => {
       <div className="section" id="projects" ref={props.projectsRef}>
         <Projects />
       </div>
-      <div className="section" id="contact" ref={props.contactRef} />
+      <div className="section" id="contact" ref={props.contactRef}>
+        <Contact />
+        <DevelopedBy />
+      </div>
     </>
   );
 };

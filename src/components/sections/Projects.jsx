@@ -15,7 +15,7 @@ class Projects extends Component {
 
   render() {
     return (
-      <div className="projects mb-5">
+      <div className="projects">
         <div className="title-margin-top" />
         <h1 className="text-center title">PROJECTS</h1>
         <div className="title-margin" />
