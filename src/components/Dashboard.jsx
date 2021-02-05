@@ -203,6 +203,7 @@ function Dashboard(params) {
         aboutMeRef={aboutMeRef}
         projectsRef={projectsRef}
         contactRef={contactRef}
+        scrollTo={scrollTo}
       />
     </div>
   );

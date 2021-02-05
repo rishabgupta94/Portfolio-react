@@ -12,7 +12,7 @@ const Content = (props) => {
     <>
       <div className="section" id="home" ref={props.homeRef}>
         <div className="page-spacer" />
-        <Home />
+        <Home aboutMeRef={props.aboutMeRef} scrollTo={props.scrollTo} />
         <div className="page-spacer" />
       </div>
       <div className="section" id="about-me" ref={props.aboutMeRef}>
