@@ -1,9 +1,6 @@
 import React, { Component } from "react";
 import { Row, Col, Container, Button } from "react-bootstrap";
-import Experience from "./Experience";
 import "./Home.css";
-import Projects from "./Projects";
-import Skills from "./Skills";
 
 class Home extends Component {
   state = {};
@@ -12,7 +9,17 @@ class Home extends Component {
       <div className="home">
         <Container>
           <Row className="align-items-center">
-            <Col className="text-center">
+            <Col
+              className="order-sm-2 text-center mobile-margin"
+              xs={12}
+              sm={"auto"}
+            >
+              <img
+                className="my-photo"
+                src={`${process.env.PUBLIC_URL}/photo.jpg`}
+              />
+            </Col>
+            <Col className="text-center order-sm-1">
               <text className="name">RISHAB GUPTA</text>
               <h6 className="sub-heading">AWS Certified Solutions Architect</h6>
               <h6 className="sub-heading">Front End Web Developer</h6>
@@ -25,12 +32,6 @@ class Home extends Component {
               >
                 <span className="know-me-text">Get to know me</span>
               </Button>
-            </Col>
-            <Col>
-              <img
-                className="my-photo"
-                src={`${process.env.PUBLIC_URL}/photo.jpg`}
-              />
             </Col>
           </Row>
         </Container>

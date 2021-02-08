@@ -1,6 +1,22 @@
 .home .my-photo {
   border-radius: 50%;
-  width: 50%;
+  width: 300px;
+}
+
+@media screen and (max-width: 800px) {
+  .name {
+    font-size: 2.5rem !important;
+  }
+
+  .home .my-photo {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .mobile-margin {
+    margin-bottom: 20px;
+  }
 }
 
 .name {
