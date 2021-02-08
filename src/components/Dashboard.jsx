@@ -54,7 +54,6 @@ function Dashboard(params) {
     const handleScroll = () => {
       const { height: headerHeight } = getDimensions(headerRef.current);
       const scrollPosition = window.scrollY + headerHeight + 520;
-      console.log(scrollPosition);
       const selected = sectionRefs.find(({ section, ref }) => {
         const ele = ref.current;
         if (ele) {
