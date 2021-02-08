@@ -50,6 +50,14 @@ class MobileSidebar extends Component {
         >
           CONTACT
         </div>
+        <div className="header-link-mobile">
+          <a
+            target="_blank"
+            href="https://portfolio-resume.s3.ca-central-1.amazonaws.com/Resume+-+Rishab+Gupta.pdf"
+          >
+            RESUME
+          </a>
+        </div>
       </nav>
     );
   }

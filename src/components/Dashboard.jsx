@@ -105,7 +105,7 @@ function Dashboard(params) {
                       scrollTo(homeRef.current);
                     }}
                   >
-                    Home
+                    HOME
                   </div>
                 </Col>
                 <Col sm="auto">
@@ -117,7 +117,7 @@ function Dashboard(params) {
                       scrollTo(aboutMeRef.current);
                     }}
                   >
-                    About Me
+                    ABOUT ME
                   </div>
                 </Col>
                 <Col sm="auto">
@@ -129,7 +129,7 @@ function Dashboard(params) {
                       scrollTo(projectsRef.current);
                     }}
                   >
-                    Projects
+                    PROJECTS
                   </div>
                 </Col>
                 <Col sm="auto">
@@ -141,7 +141,17 @@ function Dashboard(params) {
                       scrollTo(contactRef.current);
                     }}
                   >
-                    Contact
+                    CONTACT
+                  </div>
+                </Col>
+                <Col sm="auto">
+                  <div className="header_link">
+                    <a
+                      target="_blank"
+                      href="https://portfolio-resume.s3.ca-central-1.amazonaws.com/Resume+-+Rishab+Gupta.pdf"
+                    >
+                      RESUME
+                    </a>
                   </div>
                 </Col>
               </Row>

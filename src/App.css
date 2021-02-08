@@ -28,6 +28,11 @@
   outline: none;
 }
 
+.header_link a {
+  text-decoration: none;
+  color: #999999;
+}
+
 .selected {
   border-bottom: 3px solid #ffffff;
   color: #ffffff;
@@ -92,7 +97,7 @@
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 840px) {
   .mobile-header,
   .mobile-sidebar {
     display: block;

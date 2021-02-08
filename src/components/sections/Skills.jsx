@@ -112,9 +112,6 @@ class Skills extends Component {
                 <td>
                   <Badge variant="info">DynamoDB</Badge>
                 </td>
-                <td>
-                  <Badge variant="info">MongoDB</Badge>
-                </td>
               </tr>
               <tr>
                 <th>Visualization</th>
