@@ -53,7 +53,7 @@ class MobileSidebar extends Component {
         <div className="header-link-mobile">
           <a
             target="_blank"
-            href="https://portfolio-resume.s3.ca-central-1.amazonaws.com/Resume+-+Rishab+Gupta.pdf"
+            href="https://portfolio-resume.s3.ca-central-1.amazonaws.com/Resume+Portfolio-+Rishab+Gupta.pdf"
           >
             RESUME
           </a>
