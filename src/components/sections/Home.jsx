@@ -10,9 +10,8 @@ class Home extends Component {
         <Container>
           <Row className="align-items-center">
             <Col
-              className="order-sm-2 text-center mobile-margin"
+              className="order-sm-2 text-center mobile-margin col-sm"
               xs={12}
-              sm={"auto"}
             >
               <img
                 className="my-photo"
