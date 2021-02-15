@@ -126,7 +126,7 @@ class Skills extends Component {
                 </td>
               </tr>
               <tr>
-                <th>Others</th>
+                <th>Project Management</th>
                 <td>
                   <Badge variant="info">GIT</Badge>
                 </td>

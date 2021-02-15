@@ -43,7 +43,7 @@ class FarmCOP extends Component {
             <p>
               IoT devices were installed and a dashboard was created to monitor
               the cost of production of the farmers. The dashboard will help the
-              farmer monitor the usage pattern of the cost centers and make
+              farmers monitor the usage pattern of the cost centers and make
               better decisions in the future.
               <br />
               <br />

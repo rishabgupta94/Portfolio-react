@@ -65,7 +65,15 @@ class VehicleRecommendation extends Component {
               Tableau{"  "}
               <FontAwesomeIcon icon={faExternalLinkAlt} size="sm" />
             </Button>
-            <Button variant="outline-danger">
+            <Button
+              variant="outline-danger"
+              onClick={() =>
+                window.open(
+                  "https://github.com/rishabgupta94/Recommendation-for-Vehicle-Purchase/blob/master/Report.pdf",
+                  "_blank"
+                )
+              }
+            >
               Report{"  "}
               <FontAwesomeIcon icon={faExternalLinkAlt} size="sm" />
             </Button>
