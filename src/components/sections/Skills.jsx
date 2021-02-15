@@ -74,7 +74,7 @@ class Skills extends Component {
                   <Badge variant="info">CI/CD</Badge>
                 </td>
                 <td>
-                  <Badge variant="info">VPC</Badge>
+                  <Badge variant="info">CloudFormation</Badge>
                 </td>
               </tr>
               <tr>
@@ -86,10 +86,10 @@ class Skills extends Component {
                   <Badge variant="info">Jest/Enzyme</Badge>
                 </td>
                 <td>
-                  <Badge variant="info">HTML</Badge>
+                  <Badge variant="info">HTML/CSS</Badge>
                 </td>
                 <td>
-                  <Badge variant="info">CSS</Badge>
+                  <Badge variant="info">REST APIs</Badge>
                 </td>
                 <td>
                   <Badge variant="info">Bootstrap</Badge>
