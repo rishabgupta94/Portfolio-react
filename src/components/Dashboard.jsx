@@ -148,7 +148,7 @@ function Dashboard(params) {
                   <div className="header_link">
                     <a
                       target="_blank"
-                      href="https://portfolio-resume.s3.ca-central-1.amazonaws.com/Resume+Portfolio-+Rishab+Gupta.pdf"
+                      href="https://portfolio-resume.s3.ca-central-1.amazonaws.com/Resume+-+Rishab+Gupta.pdf"
                     >
                       RESUME
                     </a>
