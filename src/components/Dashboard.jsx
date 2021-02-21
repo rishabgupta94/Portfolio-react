@@ -20,7 +20,7 @@ const getDimensions = (ele) => {
   };
 };
 
-function Dashboard(params) {
+function Dashboard(props) {
   const [menuVisible, hanldeMenuVisible] = useState(false);
   const [visibleSection, setVisibleSection] = useState();
   const [copyMessage, onCopy] = useState();
@@ -118,6 +118,11 @@ function Dashboard(params) {
                     }}
                   >
                     ABOUT ME
+                    <span>
+                      {"  "}
+                      {props.ipAddress}
+                      {console.log(props.ipAddress)}
+                    </span>
                   </div>
                 </Col>
                 <Col sm="auto">

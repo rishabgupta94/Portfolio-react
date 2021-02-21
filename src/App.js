@@ -5,6 +5,7 @@ import Dashboard from "./components/Dashboard";
 function App() {
 
   const [mounted, setMounted] = useState(false);
+  const [ipAddress, setipAddress] = useState("");
 
   if(!mounted) {
     fetch('https://api.ipify.org?format=jsonp?callback=?', {
@@ -14,7 +15,7 @@ function App() {
     .then(res => {
       return res.text()
     }).then(ip => {
-      console.log('ip', ip);
+      setipAddress(ip)
     });
   }
 
@@ -24,7 +25,7 @@ function App() {
  
   return (
     <div className="app">
-      <Dashboard />
+      <Dashboard ipAddress={ipAddress}/>
     </div>
   );
 }
