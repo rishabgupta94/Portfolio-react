@@ -118,11 +118,6 @@ function Dashboard(props) {
                     }}
                   >
                     ABOUT ME
-                    <span>
-                      {"  "}
-                      {props.ipAddress}
-                      {console.log(props.ipAddress)}
-                    </span>
                   </div>
                 </Col>
                 <Col sm="auto">
