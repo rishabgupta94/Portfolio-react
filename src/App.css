@@ -32,6 +32,29 @@
   text-decoration: none;
   color: #999999;
 }
+.header_link a:hover {
+  color: rgb(219, 219, 219);
+}
+
+.header_link:hover {
+  color: rgb(219, 219, 219);
+}
+
+.chart_header svg:hover {
+  color: #d24d57;
+}
+
+.linkedin_header svg:hover {
+  color: #1291cc;
+}
+
+.github_header svg:hover {
+  color: white;
+}
+
+.email_header svg:hover {
+  color: orange;
+}
 
 .selected {
   border-bottom: 3px solid #ffffff;
@@ -44,6 +67,7 @@
 
 #home {
   background-color: #fff6ee;
+  height: 100vh;
 }
 
 #about-me {

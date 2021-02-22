@@ -1,7 +1,11 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faBars, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBars,
+  faEnvelope,
+  faChartBar,
+} from "@fortawesome/free-solid-svg-icons";
 import { Button, Row, Col, Alert } from "react-bootstrap";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
@@ -24,7 +28,7 @@ class MobileHeader extends Component {
     return (
       <div className="mobile-header">
         <Row className="justify-content-between">
-          <Col>
+          <Col className="col-auto">
             <Button
               variant="outline-none"
               className="hamburger"
@@ -35,6 +39,18 @@ class MobileHeader extends Component {
           </Col>
           <Col>
             <Row className="float-right h-100">
+              <Col className="my-auto">
+                <a
+                  target="_blank"
+                  href="https://public.tableau.com/profile/rishab.gupta#!/"
+                >
+                  <FontAwesomeIcon
+                    icon={faChartBar}
+                    color={"#999999"}
+                    size="2x"
+                  />
+                </a>
+              </Col>
               <Col className="my-auto">
                 <a
                   target="_blank"

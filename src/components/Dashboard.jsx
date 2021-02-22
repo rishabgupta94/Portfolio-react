@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faChartBar } from "@fortawesome/free-solid-svg-icons";
 import { Alert, Col, Row } from "react-bootstrap";
 import MobileSidebar from "../mobile/MobileSidebar";
 import MobileHeader from "../mobile/MobileHeader";
@@ -158,7 +158,19 @@ function Dashboard(props) {
             </Col>
             <Col sm="auto">
               <Row className="float-right h-100">
-                <Col sm="auto" className="my-auto">
+                <Col sm="auto" className="my-auto chart_header">
+                  <a
+                    target="_blank"
+                    href="https://public.tableau.com/profile/rishab.gupta#!/"
+                  >
+                    <FontAwesomeIcon
+                      icon={faChartBar}
+                      color={"#999999"}
+                      size="2x"
+                    />
+                  </a>
+                </Col>
+                <Col sm="auto" className="my-auto linkedin_header">
                   <div>
                     <a
                       target="_blank"
@@ -172,7 +184,7 @@ function Dashboard(props) {
                     </a>
                   </div>
                 </Col>
-                <Col sm="auto" className="my-auto">
+                <Col sm="auto" className="my-auto github_header">
                   <a target="_blank" href="https://github.com/rishabgupta94">
                     <FontAwesomeIcon
                       icon={faGithub}
@@ -181,7 +193,7 @@ function Dashboard(props) {
                     />
                   </a>
                 </Col>
-                <Col sm="auto" className="my-auto mr-3">
+                <Col sm="auto" className="my-auto mr-3 email_header">
                   <div className="copy-message">
                     <CopyToClipboard
                       onCopy={() =>
