@@ -32,22 +32,21 @@ class Experience extends Component {
                   <ul>
                     <li>
                       Led my team to follow the agile software development
-                      process
+                      process resulting in more organized tasks and quicker
+                      deliveries to the client.
                     </li>
                     <li>
-                      Created the dashboard design in AdobeXD and did customer
-                      surveys for improvements
-                    </li>
-                    <li>
-                      Coded the dashboard in React and used ChartJS for graphs
+                      Designed the website in AdobeXD; responsible for managing
+                      the front-end code and improving the website's performance
+                      by 50%
                     </li>
                     <li>
                       Used AWS services to create APIs, add authentication,
-                      storage and host the wesbite
+                      storage, and host the website.
                     </li>
                     <li>
                       Collaborating with potential customers to get constant
-                      feedback
+                      feedback.
                     </li>
                   </ul>
                   {/* </Card.Text> */}
